@@ -12,6 +12,27 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import tw.edu.pu.csim.s1120321.composefirestore.application.ui.theme.ComposeFireStoreApplicationTheme
+import androidx.compose.runtime.getValue
+
+import androidx.compose.runtime.mutableStateOf
+
+import androidx.compose.runtime.remember
+
+import androidx.compose.runtime.setValue
+
+import androidx.compose.material3.Text
+
+import androidx.compose.material3.TextField
+
+import androidx.compose.foundation.text.KeyboardOptions
+
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+
+import androidx.compose.material3.Button
+
+import androidx.compose.foundation.layout.Column
+
+import androidx.compose.foundation.layout.Row
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,28 +41,21 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeFireStoreApplicationTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    /*
                     Greeting(
+
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
+                    */
+                    Birth(m = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
-
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ComposeFireStoreApplicationTheme {
-        Greeting("Android")
-    }
+fun Birth(m: Modifier){
+
 }
